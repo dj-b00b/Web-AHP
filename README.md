@@ -18,7 +18,7 @@ docker-compose up
 
 
 ## Frontend
-  * **/login/** - войти в приложение от имени эксперта
+  * **/login/** - войти в приложение от имени эксперта/создать эксперта
     ![Image alt](https://github.com/dj-b00b/web-AHP/raw/master/pictures/PageLogin.png)
   * **/calculations/** - просмотреть/удалить выполненные расчеты по иерархиям
     ![Image alt](https://github.com/dj-b00b/web-AHP/raw/master/pictures/PageCalculations.png)

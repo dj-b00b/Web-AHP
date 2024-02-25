@@ -8,6 +8,7 @@
 ```
 cd frontend-react/
 npm i
+cd ..
 docker-compose build 
 docker-compose up
 ```

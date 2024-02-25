@@ -19,7 +19,7 @@ docker-compose up
 ## Frontend
   * **/login/** - войти в приложение от имени эксперта
     ![Image alt](https://github.com/dj-b00b/web-AHP/raw/master/pictures/PageLogin.png)
-  * **/calculations/** - просмотреть выполненные расчеты по иерархиям
+  * **/calculations/** - просмотреть/удалить выполненные расчеты по иерархиям
     ![Image alt](https://github.com/dj-b00b/web-AHP/raw/master/pictures/PageCalculations.png)
   * **/matrix/configure/** - выбрать/создать иерархию (ввести критерии сравнения, альтернативы, характеристики альтернатив по каждому критерию) иерархию
     ![Image alt](https://github.com/dj-b00b/web-AHP/raw/master/pictures/PageConfigMatrix.png)

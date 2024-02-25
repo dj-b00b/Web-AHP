@@ -1,0 +1,25 @@
+.mini-title {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  height: 30px;
+}
+
+.calcs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: red;
+  outline: none;
+  border: none;
+  height: 22px;
+  font-size: 16px;
+  font-family: "Bahnschrift", sans-serif;
+}

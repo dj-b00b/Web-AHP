@@ -1,0 +1,112 @@
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  align-items: center;
+}
+
+.fields-criteria-alternatives {
+  display: flex;
+  width: 100%;
+}
+
+.table-input-criteria-alternatives thead {
+  background-color: greenyellow;
+  border: 2px solid black;
+  color: black;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.input-criteria-alternatives {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.input-characteristics {
+  width: 150px;
+  text-align: center;
+}
+
+tbody tr {
+  font-size: 18px;
+}
+
+.table-input-attributes-alternatives {
+  border-collapse: collapse;
+  width: 1110px;
+  margin-top: 20px;
+}
+
+.column-attributes {
+  width: 73%;
+}
+
+.column-alternatives {
+  width: 27%;
+}
+
+.characteristics-table thead {
+  background-color: gold;
+  border: 2px solid black;
+}
+
+select {
+  background-color: rgb(237, 237, 237);
+  color: rgb(102, 102, 102);
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 15px;
+  outline: none;
+  text-align-last: center;
+  border: 0px solid;
+  border-bottom: 1.5px solid rgb(153, 153, 153);
+  margin-right: 0.5px;
+  min-width: 74vw;
+}
+
+.not-selected-hierarchy {
+  padding-bottom: 27px;
+  width: 100%;
+}
+
+.selected-hierarchy {
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+.field-input {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(237, 237, 237);
+  border-bottom: 1.5px solid rgb(153, 153, 153);
+  margin-right: 0.5px;
+}
+
+.field-input-new-hierarchy {
+  min-width: 100vw;
+  height: 35px;
+  padding-left: 50px;
+  font-size: 20px;
+  background-color: rgb(237, 237, 237);
+  border-bottom: 1.5px solid rgb(153, 153, 153);
+  margin-right: 0.5px;
+}
+
+.field-title {
+  color: rgb(102, 102, 102);
+  background-color: rgb(237, 237, 237);
+  padding-top: 10px;
+
+  width: auto;
+  text-align: center;
+  margin-right: 0.5px;
+}

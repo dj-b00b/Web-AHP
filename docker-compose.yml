@@ -1,0 +1,50 @@
+version: '3.2'
+
+services:
+    db:
+      image: postgres:16.0-alpine3.18
+      container_name: postgres-ahp
+      restart: always
+      environment:
+        - POSTGRES_USER=ahp_user
+        - POSTGRES_PASSWORD=12345678
+        - POSTGRES_DB=ahp
+      ports:
+        - '5432:5432'
+      volumes:
+        - postgres-data:/var/lib/postgresql
+      healthcheck:
+        test: ["CMD", "pg_isready", "-U", "ahp_user", "-d", "ahp"]
+        interval: 1s
+        timeout: 5s
+        retries: 10
+
+    backend:
+      build: ./backend-django/AHP
+      restart: always
+      container_name: django-ahp
+      command: bash -c "python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+      ports:
+        - '8000:8000'
+      volumes:
+        - backend-data:/var/lib/postgresql
+      depends_on:
+        db:
+          condition: service_healthy
+
+    frontend:
+      build: ./frontend-react
+      container_name: react-ahp
+      restart: always
+      ports:
+        - '3000:3000'
+      volumes:
+        - frontend-data:/var/lib/postgresql
+      depends_on:
+        - backend
+
+
+volumes:
+  postgres-data:
+  backend-data:
+  frontend-data:

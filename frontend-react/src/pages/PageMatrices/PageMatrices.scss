@@ -1,0 +1,43 @@
+.matrices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hierarchy-name {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  height: 25px;
+  align-items: center;
+  color: white;
+}
+
+.average-experts-calcs thead {
+  background-color: rgb(0 119 255);
+  border: 2px solid black;
+  color: white;
+}
+
+.average-experts-calcs {
+  margin-bottom: 50px;
+}
+
+.final-table thead {
+  background-color: rgb(120 89 188);
+  border: 2px solid black;
+  color: white;
+}
+
+.final-table {
+  margin-bottom: 30px;
+}
+
+.preferred-alternative {
+  background-color: rgb(174 254 13);
+}
+
+.headings-left-preferred-alternative {
+  background-color: rgb(174 254 13);
+  text-align: left;
+}

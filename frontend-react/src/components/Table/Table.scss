@@ -1,0 +1,47 @@
+table {
+  border-collapse: collapse;
+  width: auto;
+  margin-top: 20px;
+}
+
+tr {
+  border: 2px solid black;
+}
+
+thead tr th {
+  border: 2px solid black;
+}
+
+tbody tr td {
+  border: 2px solid black;
+}
+
+tr th {
+  font-size: 18px;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-align: center;
+}
+
+.matrix thead {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+tr td {
+  text-align: left;
+  text-align: center;
+}
+
+.headings-left {
+  text-align: left;
+}
+
+input {
+  width: 60px;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 18px;
+  text-align: center;
+}

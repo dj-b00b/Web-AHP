@@ -1,0 +1,51 @@
+.calc {
+  display: flex;
+  justify-content: space-between;
+  border: 2.5px solid black;
+  margin-top: 15px;
+}
+
+.calc-params {
+  display: flex;
+  flex-direction: column;
+  width: 130vh;
+}
+
+.delete-calc {
+  border: none;
+  margin-top: 8px;
+  padding-right: 15px;
+  color: red;
+  background-color: transparent;
+}
+
+.delete-calc:active {
+  color: #d20303;
+  transition: 0.5s;
+  animation: blinker 0.3s linear;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.date-calc {
+  padding-left: 10px;
+}
+
+.name-calc {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.count-experts-calc {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.calc:hover {
+  transition-duration: 0.2s;
+  background-color: gainsboro;
+}

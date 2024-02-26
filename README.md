@@ -33,15 +33,15 @@ docker-compose up
 	1) **POST /experts/** - создать эксперта
  	```json
  	{
- 	  username: "test_user",
- 	  password: 12345678,
+ 	  "username": "test_user",
+ 	  "password": "12345678",
  	}
  	```
 	2) **POST /experts/token-auth/** - получить/создать JWT-токен авторизации
  	```json
  	{
- 	  username: "test_user",
- 	  password: 12345678,
+ 	  "username": "test_user",
+ 	  "password": "12345678",
  	}
  	```
 2) приложение hierarchies
